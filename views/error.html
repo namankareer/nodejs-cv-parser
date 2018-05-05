@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <title>Error 404</title>
+    <style>
+        h1,
+        .alpha {
+            margin-bottom: rem;
+            font-size: 1rem;
+            font-weight: 100;
+            line-height: 0;
+            letter-spacing: -.05em;
+
+        }
+
+        @media (min-width: 650px) {
+            .mega {
+                font-size: 3.9rem;
+                line-height: 1;
+
+
+            }
+        }
+
+        html {
+            font: 100%/1.5 "Roboto", Verdana, sans-serif;
+            color: #3d464d;
+            background-color: #fff;
+            -webkit-font-smoothing: antialiased;
+            font-weight: 100;
+            line-height: 0;
+            letter-spacing: -.01em;
+            overflow: hidden-x;
+            text-align: center;
+        }
+
+        @media (min-width: 650px) {
+            html {
+                height: 100%;
+
+            }
+
+            body {
+                display: inline-block;
+                vertical-align: bottom;
+                max-width: 38rem;
+
+            }
+        }
+
+        .error_message {
+            font-size: 1em;
+            color: #f35626;
+        }
+        .error_message span {
+            display: inline-block;
+            animation: rot 3s infinite linear;
+        }
+
+        .site__title {
+            color: #f35626;
+            background-image: -webkit-linear-gradient(92deg, #f35626, #feab3a);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            -webkit-animation: hue 3s infinite linear;
+            text-align: center;
+            font-size: 2em;
+            position: absolute;
+            left: 50%;
+            top: 20%;
+            transform: translate(-50%, -50%);
+            width: 600px;
+
+        }
+
+        @-webkit-keyframes hue {
+            from {
+                -webkit-filter: hue-rotate(0deg);
+            }
+
+            to {
+                -webkit-filter: hue-rotate(-360deg);
+            }
+        }
+
+        @-webkit-keyframes rot {
+            from {
+                filter: opacity(1);
+                transform: rotateZ(0deg);
+            }
+
+            99% {
+                transform: rotateZ(90deg);
+                filter: opacity(1);
+            }
+
+            100% {
+                filter: opacity(0);
+            }
+        }
+    </style>
+    <script src="main.js"></script>
+</head>
+
+<body>
+
+    <div>
+        <p class="site__title mega">Unable To Parse This CV </p>
+        <h4 class="error_message">Error In Fetching (Data is not extracting from this type of docx)  <span>:(</span> </h4>
+    </div>
+
+
+
+
+</body>
+
+</html>

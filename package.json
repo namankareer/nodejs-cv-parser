@@ -1,0 +1,37 @@
+{
+  "name": "code-4-cv-parser",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "cloudconvert": "^1.1.2",
+    "cool-ascii-faces": "^1.3.4",
+    "date-diff": "0.1.3",
+    "dom-parser": "^0.1.5",
+    "ejs": "^2.5.7",
+    "express": "^4.16.2",
+    "forever": "^0.15.3",
+    "forever-monitor": "^1.7.1",
+    "html-beautify": "^1.0.4",
+    "mammoth": "^1.4.4",
+    "multer": "^1.3.0",
+    "nodemon": "^1.17.1",
+    "request": "^2.83.0",
+    "textract": "^2.2.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": " nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chandulella23/nodejs-cv-parser.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/chandulella23/nodejs-cv-parser/issues"
+  },
+  "homepage": "https://github.com/chandulella23/nodejs-cv-parser#readme"
+}

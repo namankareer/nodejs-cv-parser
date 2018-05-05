@@ -1,0 +1,54 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Upload Document</title>
+</head>
+<body>
+<div style = "margin: 200px">
+    <h1><center><i>Upload CV</i></center></h1>
+    <form method="post" enctype="multipart/form-data" >
+    <table align="center">
+        <tr>
+            <td>
+                <input type="file" name="sample" accept=".docx,.pdf,.doc" id = "fname" required/>
+            </td>
+            <td>
+                    <button id="button1"> Submit </button>
+            </td>
+        </tr>
+    </table>
+    </form>
+</div>
+<script>
+
+document.getElementById('fname').addEventListener('change', checkFile, false);
+
+function checkFile(e) {
+
+    var file_list = e.target.files;
+    let b1=document.getElementById('button1');
+    b1.disabled=false;
+
+
+    for (var i = 0, file; file = file_list[i]; i++) {
+        var sFileName = file.name;
+        var sFileExtension = sFileName.split('.')[sFileName.split('.').length - 1].toLowerCase();
+        var iFileSize = file.size;
+        var iConvert = (file.size / 199999).toFixed(2);
+
+        if (!(iFileSize > 4999 && iFileSize <199999)) {
+
+              txt = "File type : " + sFileExtension + "\n\n";
+              txt += "Please make sure your file is in pdf or doc or docx format and < 200KB.\n\n";
+              alert(txt);
+              b1.disabled=true;
+
+
+        }
+    }
+}
+</script>
+</body>
+</html>
